@@ -1,0 +1,1437 @@
+yarn run v1.22.22
+$ yarn workspaces run jest
+
+> client
+$ jest
+Starting dev servers. This is required for end-to-end testing
+yarn workspace v1.22.22
+
+yarn workspace v1.22.22
+
+(node:85358) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+(node:85357) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+yarn run v1.22.22
+
+yarn run v1.22.22
+
+(node:85361) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+(node:85360) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+$ webpack-dev-server --mode development
+
+$ DEBUG=express:* DOTENV_CONFIG_PATH=../config/dev.env nodemon --ignore './scripts/' --ignore './resources/' --inspect -r dotenv/config server.js --watch
+
+[nodemon] 2.0.22
+
+[nodemon] to restart at any time, enter `rs`
+
+[nodemon] watching path(s): *.*
+
+[nodemon] watching extensions: js,mjs,json
+
+[nodemon] starting `node --inspect -r dotenv/config server.js`
+
+Debugger listening on ws://127.0.0.1:9229/69655e9f-e081-4789-bbfe-5901b1322736
+For help, see: https://nodejs.org/en/docs/inspector
+
+2025-07-13T22:11:43.747Z express:application set "x-powered-by" to true
+
+2025-07-13T22:11:43.748Z express:application set "etag" to 'weak'
+
+2025-07-13T22:11:43.748Z express:application set "etag fn" to [Function: generateETag]
+
+2025-07-13T22:11:43.748Z express:application set "env" to 'development'
+
+2025-07-13T22:11:43.748Z express:application set "query parser" to 'simple'
+
+2025-07-13T22:11:43.748Z express:application set "query parser fn" to [Function: parse]
+
+2025-07-13T22:11:43.748Z express:application set "subdomain offset" to 2
+
+2025-07-13T22:11:43.748Z express:application set "trust proxy" to false
+
+2025-07-13T22:11:43.748Z express:application set "trust proxy fn" to [Function: trustNone]
+2025-07-13T22:11:43.748Z express:application booting in development mode
+
+2025-07-13T22:11:43.749Z express:application set "view" to [Function: View]
+
+2025-07-13T22:11:43.749Z express:application set "views" to '/Users/drboostfire/Documents/GitHub/aria-at-app/server/views'
+2025-07-13T22:11:43.749Z express:application set "jsonp callback name" to 'callback'
+
+2025-07-13T22:11:43.749Z express:application set "view engine" to 'hbs'
+
+2025-07-13T22:11:43.749Z express:application set "views" to '/Users/drboostfire/Documents/GitHub/aria-at-app/server/handlebars/embed/views'
+
+2025-07-13T22:11:43.753Z express:application set "x-powered-by" to true
+2025-07-13T22:11:43.753Z express:application set "etag" to 'weak'
+
+2025-07-13T22:11:43.753Z express:application set "etag fn" to [Function: generateETag]
+2025-07-13T22:11:43.753Z express:application set "env" to 'development'
+2025-07-13T22:11:43.753Z express:application set "query parser" to 'simple'
+2025-07-13T22:11:43.753Z express:application set "query parser fn" to [Function: parse]
+2025-07-13T22:11:43.753Z express:application set "subdomain offset" to 2
+2025-07-13T22:11:43.753Z express:application set "trust proxy" to false
+2025-07-13T22:11:43.753Z express:application set "trust proxy fn" to [Function: trustNone]
+2025-07-13T22:11:43.753Z express:application booting in development mode
+2025-07-13T22:11:43.753Z express:application set "view" to [Function: View]
+
+2025-07-13T22:11:43.753Z express:application set "views" to '/Users/drboostfire/Documents/GitHub/aria-at-app/server/views'
+2025-07-13T22:11:43.753Z express:application set "jsonp callback name" to 'callback'
+
+2025-07-13T22:11:43.757Z express:application set "x-powered-by" to true
+
+2025-07-13T22:11:43.757Z express:application set "etag" to 'weak'
+2025-07-13T22:11:43.757Z express:application set "etag fn" to [Function: generateETag]
+2025-07-13T22:11:43.757Z express:application set "env" to 'development'
+2025-07-13T22:11:43.757Z express:application set "query parser" to 'simple'
+2025-07-13T22:11:43.757Z express:application set "query parser fn" to [Function: parse]
+
+2025-07-13T22:11:43.757Z express:application set "subdomain offset" to 2
+2025-07-13T22:11:43.757Z express:application set "trust proxy" to false
+2025-07-13T22:11:43.757Z express:application set "trust proxy fn" to [Function: trustNone]
+
+2025-07-13T22:11:43.757Z express:application booting in development mode
+2025-07-13T22:11:43.757Z express:application set "view" to [Function: View]
+
+2025-07-13T22:11:43.758Z express:application set "views" to '/Users/drboostfire/Documents/GitHub/aria-at-app/server/views'
+2025-07-13T22:11:43.758Z express:application set "jsonp callback name" to 'callback'
+
+2025-07-13T22:11:43.758Z express:application .use app under /api
+
+2025-07-13T22:11:43.758Z express:application .use app under /embed
+
+Listening on 8033
+
+<i> [webpack-dev-server] [HPM] Proxy created: /aria-at,/api,/embed  -> http://localhost:8033
+
+<i> [webpack-dev-server] Project is running at:
+
+<i> [webpack-dev-server] Loopback: http://localhost:3033/
+<i> [webpack-dev-server] On Your Network (IPv4): http://10.199.132.204:3033/
+<i> [webpack-dev-server] On Your Network (IPv6): http://[fe80::1]:3033/
+<i> [webpack-dev-server] Content not from webpack is served from '/Users/drboostfire/Documents/GitHub/aria-at-app/client/static' directory
+<i> [webpack-dev-server] 404s will fallback to '/index.html'
+
+`isModuleDeclaration` has been deprecated, please migrate to `isImportOrExportDeclaration`
+    at isModuleDeclaration (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/@babel/types/lib/validators/generated/index.js:3940:35)
+    at PluginPass.Program (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/babel-plugin-lodash/lib/index.js:102:44)
+
+assets by path *.js 23.1 MiB
+  asset bundle.js 22.9 MiB [emitted] (name: main)
+  asset resources_vrender_mjs.bundle.js 67.3 KiB [emitted]
+  asset resources_aria-at-harness_mjs.bundle.js 58.4 KiB [emitted]
+  asset resources_at-commands_mjs.bundle.js 18.3 KiB [emitted]
+  asset resources_types_aria-at-test-run_js.bundle.js 9.44 KiB [emitted]
+  asset resources_types_aria-at-test-result_js.bundle.js 4.67 KiB [emitted]
+assets by path *.jpg 65.1 KiB
+  asset b69701922b27f0ff95a2f8a4f03b5025.jpg 17.7 KiB [emitted] [immutable] [from: assets/write-tests.jpg] (auxiliary name: main)
+  asset c0a3b8e1b3d7237301d71953c9a811d1.jpg 16.7 KiB [emitted] [immutable] [from: assets/review-tests.jpg] (auxiliary name: main)
+  asset b94a228c191bd738b564128bf6c5b467.jpg 15.6 KiB [emitted] [immutable] [from: assets/review-assertion.jpg] (auxiliary name: main)
+  asset d590efaabe47e07bb6394b5a9618986d.jpg 15 KiB [emitted] [immutable] [from: assets/join-community.jpg] (auxiliary name: main)
+asset index.css 3.65 KiB [emitted] [from: static/index.css] [copied]
+asset index.html 440 bytes [emitted] [from: static/index.html] [copied]
+orphan modules 538 KiB [orphan] 204 modules
+runtime modules 31.8 KiB 18 modules
+modules by path ../ 6.2 MiB
+  javascript modules 6.14 MiB 1108 modules
+  json modules 62.9 KiB
+    modules by path ../node_modules/react-html-parser/node_modules/dom-serializer/ 32.8 KiB 5 modules
+    modules by path ../node_modules/react-html-parser/node_modules/entities/ 30 KiB 4 modules
+modules by path ./ 1.72 MiB 330 modules
+asset modules 5.04 KiB
+  data:image/svg+xml,%3csvg xmlns=%27.. 281 bytes [built] [code generated]
+  data:image/svg+xml,%3csvg xmlns=%27.. 281 bytes [built] [code generated]
+  data:image/svg+xml,%3csvg xmlns=%27.. 279 bytes [built] [code generated]
+  data:image/svg+xml,%3csvg xmlns=%27.. 161 bytes [built] [code generated]
+  + 15 modules
+readable-stream (ignored) 15 bytes [built] [code generated]
+webpack 5.92.1 compiled successfully in 5175 ms
+
+(node:85363) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16) {
+  name: 'SequelizeDatabaseError',
+  parent: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-tester';`,
+    parameters: undefined
+  },
+  original: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-tester';`,
+    parameters: undefined
+  },
+  sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-tester';`,
+  parameters: {}
+}
+
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16)
+
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16) {
+  name: 'SequelizeDatabaseError',
+  parent: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-vendor';`,
+    parameters: undefined
+  },
+  original: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-vendor';`,
+    parameters: undefined
+  },
+  sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-vendor';`,
+  parameters: {}
+}
+
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16)
+
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16) {
+  name: 'SequelizeDatabaseError',
+  parent: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-admin';`,
+    parameters: undefined
+  },
+  original: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-admin';`,
+    parameters: undefined
+  },
+  sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-admin';`,
+  parameters: {}
+}
+
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16)
+
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16) {
+  name: 'SequelizeDatabaseError',
+  parent: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-tester';`,
+    parameters: undefined
+  },
+  original: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-tester';`,
+    parameters: undefined
+  },
+  sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-tester';`,
+  parameters: {}
+}
+
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16)
+
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16) {
+  name: 'SequelizeDatabaseError',
+  parent: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-admin';`,
+    parameters: undefined
+  },
+  original: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-admin';`,
+    parameters: undefined
+  },
+  sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-admin';`,
+  parameters: {}
+}
+
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16)
+
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16) {
+  name: 'SequelizeDatabaseError',
+  parent: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-vendor';`,
+    parameters: undefined
+  },
+  original: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-vendor';`,
+    parameters: undefined
+  },
+  sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-vendor';`,
+  parameters: {}
+}
+
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16)
+
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16) {
+  name: 'SequelizeDatabaseError',
+  parent: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-admin';`,
+    parameters: undefined
+  },
+  original: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-admin';`,
+    parameters: undefined
+  },
+  sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-admin';`,
+  parameters: {}
+}
+
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16)
+
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16) {
+  name: 'SequelizeDatabaseError',
+  parent: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-admin';`,
+    parameters: undefined
+  },
+  original: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-admin';`,
+    parameters: undefined
+  },
+  sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-admin';`,
+  parameters: {}
+}
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16)
+
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16) {
+  name: 'SequelizeDatabaseError',
+  parent: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-tester';`,
+    parameters: undefined
+  },
+  original: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-tester';`,
+    parameters: undefined
+  },
+  sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-tester';`,
+  parameters: {}
+}
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16)
+
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16) {
+  name: 'SequelizeDatabaseError',
+  parent: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-tester';`,
+    parameters: undefined
+  },
+  original: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-tester';`,
+    parameters: undefined
+  },
+  sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-tester';`,
+  parameters: {}
+}
+
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16)
+
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16) {
+  name: 'SequelizeDatabaseError',
+  parent: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-vendor';`,
+    parameters: undefined
+  },
+  original: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-vendor';`,
+    parameters: undefined
+  },
+  sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-vendor';`,
+  parameters: {}
+}
+
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16)
+
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16) {
+  name: 'SequelizeDatabaseError',
+  parent: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-admin';`,
+    parameters: undefined
+  },
+  original: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-admin';`,
+    parameters: undefined
+  },
+  sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-admin';`,
+  parameters: {}
+}
+
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16)
+
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16) {
+  name: 'SequelizeDatabaseError',
+  parent: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-tester';`,
+    parameters: undefined
+  },
+  original: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-tester';`,
+    parameters: undefined
+  },
+  sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-tester';`,
+  parameters: {}
+}
+
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16)
+
+Proxy request timed out: /w3c/aria-at/c665367f3742c2b607f7b3c2655782188b93f302/tests/alert/reference/2022-4-8_144013/alert.setFocusOnButton.html
+
+Proxy request timed out: /w3c/aria-at/c665367f3742c2b607f7b3c2655782188b93f302/tests/alert/reference/2022-4-8_144013/css/alert.css
+Proxy request timed out: /w3c/aria-at/ab77d47ab19db71c635c9bb459ba5c34182e1400/tests/alert/reference/2022-4-8_144013/js/alert.js
+Proxy request timed out: /w3c/aria-at/ca4c80fdb888a9ed9b68d92712189af681b437dc/tests/alert/reference/2022-4-8_144013/alert.setFocusOnButton.html
+
+Proxy request timed out: /w3c/aria-at/ca4c80fdb888a9ed9b68d92712189af681b437dc/tests/alert/reference/2022-4-8_144013/css/alert.css
+
+Proxy request timed out: /w3c/aria-at/c665367f3742c2b607f7b3c2655782188b93f302/tests/alert/reference/2022-4-8_144013/js/alert.js
+Proxy request timed out: /w3c/aria-at/ab77d47ab19db71c635c9bb459ba5c34182e1400/tests/alert/reference/2022-4-8_144013/alert.setFocusOnButton.html
+Proxy request timed out: /w3c/aria-at/ab77d47ab19db71c635c9bb459ba5c34182e1400/tests/alert/reference/2022-4-8_144013/css/alert.css
+Proxy request timed out: /w3c/aria-at/ca4c80fdb888a9ed9b68d92712189af681b437dc/tests/alert/reference/2022-4-8_144013/js/alert.js
+
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16) {
+  name: 'SequelizeDatabaseError',
+  parent: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-admin';`,
+    parameters: undefined
+  },
+  original: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-admin';`,
+    parameters: undefined
+  },
+  sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-admin';`,
+  parameters: {}
+}
+
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16)
+
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16) {
+  name: 'SequelizeDatabaseError',
+  parent: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-tester';`,
+    parameters: undefined
+  },
+  original: error: permission denied for table Vendor
+      at Parser.parseErrorMessage (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:283:98)
+      at Parser.handlePacket (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:122:29)
+      at Parser.parse (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/parser.js:35:38)
+      at Socket.<anonymous> (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/pg-protocol/dist/index.js:11:42)
+      at Socket.emit (node:events:507:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at TCP.onStreamRead (node:internal/stream_base_commons:189:23) {
+    length: 94,
+    severity: 'ERROR',
+    code: '42501',
+    detail: undefined,
+    hint: undefined,
+    position: undefined,
+    internalPosition: undefined,
+    internalQuery: undefined,
+    where: undefined,
+    schema: undefined,
+    table: undefined,
+    column: undefined,
+    dataType: undefined,
+    constraint: undefined,
+    file: 'aclchk.c',
+    line: '3657',
+    routine: 'aclcheck_error',
+    sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-tester';`,
+    parameters: undefined
+  },
+  sql: `SELECT "User"."id", "User"."username", "User"."isBot", "User"."createdAt", "User"."updatedAt", "User"."vendorId", "roles"."name" AS "roles.name", "ats"."id" AS "ats.id", "ats"."name" AS "ats.name", "ats"."key" AS "ats.key", "ats"."vendorId" AS "ats.vendorId", "testPlanRuns"."id" AS "testPlanRuns.id", "testPlanRuns"."testerUserId" AS "testPlanRuns.testerUserId", "testPlanRuns"."testPlanReportId" AS "testPlanRuns.testPlanReportId", "testPlanRuns"."testResults" AS "testPlanRuns.testResults", "testPlanRuns"."initiatedByAutomation" AS "testPlanRuns.initiatedByAutomation", "testPlanRuns"."isPrimary" AS "testPlanRuns.isPrimary" FROM "User" AS "User" LEFT OUTER JOIN ( "UserRoles" AS "roles->UserRoles" INNER JOIN "Role" AS "roles" ON "roles"."name" = "roles->UserRoles"."roleName") ON "User"."id" = "roles->UserRoles"."userId" LEFT OUTER JOIN ( "UserAts" AS "ats->UserAts" INNER JOIN "At" AS "ats" ON "ats"."id" = "ats->UserAts"."atId") ON "User"."id" = "ats->UserAts"."userId" LEFT OUTER JOIN "TestPlanRun" AS "testPlanRuns" ON "User"."id" = "testPlanRuns"."testerUserId" LEFT OUTER JOIN "Vendor" AS "company" ON "User"."vendorId" = "company"."id" WHERE "User"."username" = 'joe-the-tester';`,
+  parameters: {}
+}
+
+Error
+    at Query.run (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/postgres/query.js:50:25)
+    at /Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/sequelize.js:315:28
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async PostgresQueryInterface.select (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/dialects/abstract/query-interface.js:407:12)
+    at async User.findAll (/Users/drboostfire/Documents/GitHub/aria-at-app/node_modules/sequelize/lib/model.js:1140:21)
+    at async Object.nestedGetOrCreate (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/ModelService.js:389:19)
+    at async getOrCreateUser (/Users/drboostfire/Documents/GitHub/aria-at-app/server/models/services/UserService.js:452:30)
+    at async setFakeUserController (/Users/drboostfire/Documents/GitHub/aria-at-app/server/controllers/FakeUserController.js:30:16)
+
+<i> [webpack-dev-server] Gracefully shutting down. To force exit, press ^C again. Please wait...
+
+<i> [webpack-dev-server] [HPM] server close signal received: closing proxy server
+
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+info Visit https://yarnpkg.com/en/docs/cli/workspaces for documentation about this command.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
