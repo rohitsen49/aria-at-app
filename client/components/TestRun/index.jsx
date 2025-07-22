@@ -133,6 +133,8 @@ const TestRun = () => {
   const [currentAtVersion, setCurrentAtVersion] = useState('');
   const [currentBrowserVersion, setCurrentBrowserVersion] = useState('');
   const [pageReady, setPageReady] = useState(false);
+  const [showConfirmNextModal, setShowConfirmNextModal] = useState(false);
+  const [showSaveErrorModal, setShowSaveErrorModal] = useState(false);
 
   const auth = evaluateAuth(data && data.me ? data.me : {});
   let { id: userId, isSignedIn, isAdmin } = auth;
@@ -193,6 +195,7 @@ const TestRun = () => {
               currentTestBrowserVersionId
             );
           const { testPlanReport: updatedTestPlanReport } = updatedTestPlanRun;
+          // Update the local React state for UI to reflect the saved results
           updateLocalState(updatedTestPlanRun, updatedTestPlanReport);
           setPageReady(true);
         })();
@@ -293,8 +296,8 @@ const TestRun = () => {
 
   const updateLocalState = (updatedTestPlanRun, updatedTestPlanReport) => {
     const { conflicts, runnableTests } = updatedTestPlanReport;
-
     const testResults = updatedTestPlanRun.testResults;
+
     const tests = runnableTests.map((test, index) => ({
       ...test,
       index,
@@ -305,7 +308,7 @@ const TestRun = () => {
 
     setTests(tests);
     setTestResults(testResults);
-    setCurrentTest(tests[currentTestIndex]);
+    setCurrentTest(tests[currentTestIndex]); // This is where the fix happens
     setTestPlanReport({ ...testPlanReport, conflicts });
   };
 
@@ -512,10 +515,11 @@ const TestRun = () => {
       forceSave = false,
       forceEdit = false
     ) => {
-      if (updateMessageComponent) {
-        setUpdateMessageComponent(null);
-      }
+      if (updateMessageComponent) setUpdateMessageComponent(null);
+
       try {
+        console.log('Saving form...');
+
         if (forceEdit) setIsTestEditClicked(true);
         else setIsTestEditClicked(false);
 
@@ -523,12 +527,16 @@ const TestRun = () => {
         if (!forceEdit && currentTest.testResult?.completedAt) return true;
 
         setIsSavingForm(true);
+
+        console.log('Before remap:', testRunStateRef.current);
         const scenarioResults = remapScenarioResults(
           testRunStateRef.current || recentTestRunStateRef.current,
           currentTest.testResult?.scenarioResults,
           false
         );
+        console.log('Remapped scenarioResults:', scenarioResults);
 
+        console.log('Calling handleSaveOrSubmitTestResultAction...');
         await handleSaveOrSubmitTestResultAction(
           {
             atVersionId: currentTestAtVersionId,
@@ -537,17 +545,14 @@ const TestRun = () => {
           },
           forceSave ? false : !!testRunResultRef.current
         );
-
-        if (withResult && !forceSave) {
-          setIsSavingForm(false);
-          return !!testRunResultRef.current;
-        }
+        console.log('Save successful');
 
         setIsSavingForm(false);
         return true;
       } catch (e) {
-        console.error('save.error', e);
+        console.error('saveForm error:', e);
         setIsSavingForm(false);
+        return false;
       }
     };
 
@@ -559,10 +564,19 @@ const TestRun = () => {
         break;
       }
       case 'goToNextTest': {
-        // Save renderer's form state
-        await saveForm(false, true);
+        const saveSuccessful = await saveForm(true);
+        console.log('Was save successful?', saveSuccessful);
+
+        if (!saveSuccessful) {
+          console.warn('Save reported as failed — showing modal');
+          setShowSaveErrorModal(true);
+          return false;
+        }
+
+        console.log('Save succeeded, navigating...');
+        setShowSaveErrorModal(false);
         navigateTests(false, currentTest, tests, setCurrentTestIndex);
-        break;
+        return true;
       }
       case 'goToPreviousTest': {
         // Save renderer's form state
@@ -607,7 +621,17 @@ const TestRun = () => {
 
   const handleSaveClick = async () => performButtonAction('saveTest');
 
-  const handleNextTestClick = async () => performButtonAction('goToNextTest');
+  const handleNextTestClick = () => {
+    setShowConfirmNextModal(true);
+  };
+
+  const handleConfirmNextTest = async () => {
+    setShowConfirmNextModal(false);
+    const saveSuccessful = await performButtonAction('goToNextTest');
+    if (!saveSuccessful) {
+      setShowSaveErrorModal(true);
+    }
+  };
 
   const handlePreviousTestClick = async () =>
     performButtonAction('goToPreviousTest');
@@ -645,256 +669,73 @@ const TestRun = () => {
     { atVersionId, browserVersionId, scenarioResults = [] },
     isSubmit = false
   ) => {
-    const { id } = currentTest.testResult;
+    try {
+      const { id } = currentTest.testResult;
 
-    /*
-     * The shape of scenarioResults should be:
-     *
-     * {
-     * ..id,
-     * ..output,
-     * ..assertionResults: [
-     * ....{
-     * ......id
-     * ......passed
-     * ....},
-     * ....other assertionResults,
-     * ..],
-     * ..hasUnexpected,
-     * ..unexpectedBehaviors: [
-     * ....{
-     * ......id
-     * ......impact
-     * ......details
-     * ....},
-     * ....other unexpectedBehaviors,
-     * ..]
-     * }
-     * */
-    const formattedScenarioResults = scenarioResults.map(
-      ({
-        assertionResults,
-        id,
-        output,
-        untestable,
-        hasUnexpected,
-        unexpectedBehaviors
-      }) => ({
-        id,
-        output: output,
-        untestable: untestable,
-        hasUnexpected,
-        unexpectedBehaviors: unexpectedBehaviors?.map(
-          ({ id, impact, details }) => ({
-            id,
-            impact,
-            details
-          })
-        ),
-        assertionResults: assertionResults
-          // All assertions are always being passed from the TestRenderer results, but
-          // when there is a 0-priority assertion exception, an id won't be provided,
-          // so do not include that result.
-          // This is due to the TestRenderer still requiring the position of the
-          // excluded assertion, but it can be removed at this point before being passed
-          // to the server
-          .filter(el => !!el.id)
-          .map(({ id, passed }) => ({
-            id,
-            passed
-          }))
-      })
-    );
-
-    let variables = {
-      id,
-      atVersionId,
-      browserVersionId,
-      scenarioResults: formattedScenarioResults
-    };
-
-    if (isSubmit) {
-      const result = await submitTestResult({ variables });
-      const { testPlanRun: updatedTestPlanRun } =
-        result.data.testResult.submitTestResult;
-      const { testPlanReport: updatedTestPlanReport } = updatedTestPlanRun;
-      updateLocalState(updatedTestPlanRun, updatedTestPlanReport);
-    } else {
-      const result = await saveTestResult({ variables });
-      const { testPlanRun: updatedTestPlanRun } =
-        result.data.testResult.saveTestResult;
-      const { testPlanReport: updatedTestPlanReport } = updatedTestPlanRun;
-      updateLocalState(updatedTestPlanRun, updatedTestPlanReport);
-    }
-  };
-
-  const handleReviewConflictsButtonClick = async () =>
-    setShowReviewConflictsModal(true);
-
-  const handleEditAtBrowserDetailsClick = async () => {
-    setIsEditAtBrowserDetailsClicked(true);
-
-    if (isAdminReviewer && adminReviewerOriginalTestRef.current) {
-      if (testPlanReport.browser.name !== uaBrowser) {
-        setThemedModalTitle(
-          'Your Browser is different than the one used to record this result'
-        );
-        setThemedModalContent(
-          <>
-            You are currently using{' '}
-            <b>
-              {uaBrowser} {uaMajor}
-            </b>
-            , but are trying to edit a test result that was submitted with{' '}
-            <b>
-              {testPlanReport.browser.name}{' '}
-              {
-                adminReviewerOriginalTestRef.current.testResult.browserVersion
-                  .name
-              }
-            </b>
-            .<br />
-            <br />
-            You can&apos;t change the Browser type but can make other changes.
-            Please proceed with caution.
-          </>
-        );
-        setThemedModalOtherButton(null);
-        setShowThemedModal(true);
-        return;
-      }
-
-      if (
-        currentTest.testResult?.atVersion?.name !==
-        adminReviewerOriginalTestRef.current.testResult?.atVersion?.name
-      ) {
-        setThemedModalTitle(
-          'Your AT Version is different than the one used to record this result'
-        );
-        setThemedModalContent(
-          <>
-            You are currently running{' '}
-            <b>
-              {testPlanReport.at.name} {currentTest.testResult?.atVersion?.name}
-            </b>
-            , but are editing a test result that was submitted with{' '}
-            <b>
-              {testPlanReport.at.name}{' '}
-              {adminReviewerOriginalTestRef.current.testResult?.atVersion?.name}
-            </b>
-            .<br />
-            <br />
-            Do you want to update the AT version used to record this test
-            result?
-          </>
-        );
-        setThemedModalOtherButton({
-          text: 'Update AT Version',
-          action: () => {
-            setShowThemedModal(false);
-            setIsShowingAtBrowserModal(true);
-          }
-        });
-        setShowThemedModal(true);
-        return;
-      }
-
-      if (
-        !adminReviewerOriginalTestRef.current.testResult?.browserVersion?.name.includes(
-          `${uaMajor}`
-        )
-      ) {
-        setThemedModalTitle(
-          'Your Browser Version is different than the one used to record this result'
-        );
-        setThemedModalContent(
-          <>
-            You are currently using{' '}
-            <b>
-              {uaBrowser} {uaMajor}
-            </b>
-            , but are trying to edit a test result that was submitted with{' '}
-            <b>
-              {testPlanReport.browser.name}{' '}
-              {
-                adminReviewerOriginalTestRef.current.testResult?.browserVersion
-                  ?.name
-              }
-            </b>
-            .<br />
-            <br />
-            Do you want to update the Browser version used to record this test
-            result?
-          </>
-        );
-        setThemedModalOtherButton({
-          text: 'Update Browser Version',
-          action: () => {
-            setShowThemedModal(false);
-            setIsShowingAtBrowserModal(true);
-          }
-        });
-        setShowThemedModal(true);
-        return;
-      }
-    }
-    setIsShowingAtBrowserModal(true);
-  };
-
-  const handleAtAndBrowserDetailsModalAction = async (
-    updatedAtVersionName,
-    updatedBrowserVersionName,
-    updateMessage
-  ) => {
-    // Get version id for selected atVersion and browserVersion from name
-    const atVersion = testPlanReport.at.atVersions.find(
-      item => item.name === updatedAtVersionName
-    );
-
-    let browserVersion = testPlanReport.browser.browserVersions.find(
-      item => item.name === updatedBrowserVersionName
-    );
-
-    // create version if not exists (accounting for admin providing new versions)
-    if (!browserVersion) {
-      const createBrowserVersionResult = await createBrowserVersion({
-        variables: {
-          browserId: testPlanReport.browser.id,
-          browserVersionName: updatedBrowserVersionName
-        }
-      });
-      browserVersion =
-        createBrowserVersionResult.data?.browser?.findOrCreateBrowserVersion;
-    }
-
-    // Only show major browser version
-    browserVersion = {
-      id: browserVersion.id,
-      name: browserVersion.name.split('.')[0]
-    };
-
-    const updateMessageComponent = updateMessage ? (
-      <>
-        <FontAwesomeIcon icon={faCheckCircle} />
-        <span>{updateMessage}</span>
-      </>
-    ) : null;
-
-    setCurrentTestAtVersionId(atVersion.id);
-    setCurrentTestBrowserVersionId(browserVersion.id);
-    setCurrentAtVersion(atVersion);
-    setCurrentBrowserVersion(browserVersion);
-    setUpdateMessageComponent(updateMessageComponent);
-
-    const { testPlanRun: updatedTestPlanRun } =
-      await createTestResultForRenderer(
-        currentTest.id,
-        atVersion.id,
-        browserVersion.id
+      const formattedScenarioResults = scenarioResults.map(
+        ({
+          assertionResults,
+          id,
+          output,
+          untestable,
+          hasUnexpected,
+          unexpectedBehaviors
+        }) => ({
+          id,
+          output,
+          untestable,
+          hasUnexpected,
+          unexpectedBehaviors: unexpectedBehaviors?.map(
+            ({ id, impact, details }) => ({
+              id,
+              impact,
+              details
+            })
+          ),
+          assertionResults: assertionResults
+            .filter(el => !!el.id)
+            .map(({ id, passed }) => ({ id, passed }))
+        })
       );
-    const { testPlanReport: updatedTestPlanReport } = updatedTestPlanRun;
-    updateLocalState(updatedTestPlanRun, updatedTestPlanReport);
-    handleAtAndBrowserDetailsModalCloseAction();
+
+      const variables = {
+        id,
+        atVersionId,
+        browserVersionId,
+        scenarioResults: formattedScenarioResults
+      };
+
+      console.log('🛰️ Submitting with variables:', variables);
+
+      if (isSubmit) {
+        const result = await submitTestResult({ variables });
+        console.log('submitTestResult result:', result);
+
+        const { testPlanRun: updatedTestPlanRun } =
+          result.data.testResult.submitTestResult;
+        const { testPlanReport: updatedTestPlanReport } = updatedTestPlanRun;
+
+        testRunResultRef.current = result.data.testResult.submitTestResult;
+
+        updateLocalState(updatedTestPlanRun, updatedTestPlanReport);
+      } else {
+        const result = await saveTestResult({ variables });
+        console.log('saveTestResult result:', result);
+
+        const { testPlanRun: updatedTestPlanRun } =
+          result.data.testResult.saveTestResult;
+        const { testPlanReport: updatedTestPlanReport } = updatedTestPlanRun;
+
+        // Store the saved test result locally so it can be reused when navigating back
+        testRunResultRef.current = result.data.testResult.saveTestResult;
+
+        // Update the local React state for UI to reflect the saved results
+        updateLocalState(updatedTestPlanRun, updatedTestPlanReport);
+      }
+    } catch (e) {
+      console.error('handleSaveOrSubmitTestResultAction error:', e);
+      throw e;
+    }
   };
 
   const handleAtAndBrowserDetailsModalCloseAction = () => {
@@ -981,7 +822,7 @@ const TestRun = () => {
         </Button>
       );
       if (!isLastTest) forwardButtons = [nextButton];
-      primaryButtons = [previousButton, ...forwardButtons, saveResultsButton];
+      primaryButtons = [previousButton, saveResultsButton, ...forwardButtons];
     }
 
     const externalLogsUrl = testPlanRun?.collectionJob?.externalLogsUrl;
@@ -1047,17 +888,17 @@ const TestRun = () => {
           {currentTest.title}
         </h1>
         <span>{heading}</span>
-        <StatusBar
-          key={nextId()}
-          hasConflicts={currentTest.hasConflicts}
-          handleReviewConflictsButtonClick={handleReviewConflictsButtonClick}
-        />
+        <StatusBar key={nextId()} hasConflicts={currentTest.hasConflicts} />
         {pageReady && (
           <Row>
             <Col className="p-0" md={9}>
               <Row>
                 <TestRenderer
-                  key={nextId()}
+                  // These lines make sure that the results entered by a user are saved
+                  key={`test-${currentTest.id}-${
+                    testRunResultRef.current?.resultsJSON?.scenarioResults
+                      ?.length || 0
+                  }`}
                   at={testPlanReport.at}
                   testResult={
                     isViewingRun && currentTest.testResult
@@ -1065,11 +906,18 @@ const TestRun = () => {
                           testRunStateRef.current,
                           currentTest.testResult
                         )
-                      : {
-                          test: currentTest,
-                          // force the summary to be shown for an anonymous user
-                          completedAt: !!testRunResultRef.current
+                      : testRunResultRef.current &&
+                        testRunResultRef.current.resultsJSON
+                      ? {
+                          ...currentTest.testResult,
+                          // Use scenarioResults from the locally stored result to persist UI values
+                          scenarioResults:
+                            testRunResultRef.current.resultsJSON
+                              .scenarioResults,
+                          // Ensure completed state is recognized for summary
+                          completedAt: true
                         }
+                      : currentTest.testResult
                   }
                   testPageUrl={testPlanVersion.testPageUrl}
                   testFormatVersion={testPlanVersion.metadata.testFormatVersion}
@@ -1083,6 +931,26 @@ const TestRun = () => {
                   isEdit={isTestEditClicked}
                   setIsRendererReady={setIsRendererReady}
                   commonIssueContent={commonIssueContent}
+                  isRerunReport={testPlanReport.isRerun}
+                  historicalTestResult={
+                    testPlanReport.isRerun && testPlanReport.historicalReport
+                      ? testPlanReport.historicalReport.finalizedTestResults?.find(
+                          result => result.test.id === currentTest.id
+                        )
+                      : null
+                  }
+                  historicalAtName={
+                    testPlanReport.isRerun && testPlanReport.historicalReport
+                      ? testPlanReport.historicalReport.at.name
+                      : null
+                  }
+                  historicalAtVersion={
+                    testPlanReport.isRerun && testPlanReport.historicalReport
+                      ? testPlanReport.historicalReport.finalizedTestResults?.find(
+                          result => result.test.id === currentTest.id
+                        )?.atVersion?.name
+                      : null
+                  }
                 />
               </Row>
               {isRendererReady && (
@@ -1188,7 +1056,7 @@ const TestRun = () => {
       testResults={testResults}
       testCount={testCount}
       editAtBrowserDetailsButtonRef={editAtBrowserDetailsButtonRef}
-      handleEditAtBrowserDetailsClick={handleEditAtBrowserDetailsClick}
+      //handleEditAtBrowserDetailsClick={handleEditAtBrowserDetailsClick}
       testIndex={currentTestIndex}
       isSignedIn={isViewingRun}
       isReadOnly={isReadOnly}
@@ -1313,8 +1181,41 @@ const TestRun = () => {
               )}
               patternName={testPlanVersion.title}
               testerName={tester.username}
-              handleAction={handleAtAndBrowserDetailsModalAction}
+              //handleAction={handleAtAndBrowserDetailsModalAction}
               handleClose={handleAtAndBrowserDetailsModalCloseAction}
+            />
+          )}
+          {showConfirmNextModal && (
+            <BasicModal
+              key={`ConfirmNext__${currentTestIndex}`}
+              show={showConfirmNextModal}
+              centered={true}
+              animation={false}
+              title="Proceed to Next Test?"
+              content="Are you sure you want to go to the next test? This action will save the results of the current test before proceeding."
+              actions={[
+                {
+                  label: 'Yes',
+                  variant: 'primary',
+                  onClick: handleConfirmNextTest
+                }
+              ]}
+              closeLabel="No"
+              handleClose={() => setShowConfirmNextModal(false)}
+              closeButton={false}
+            />
+          )}
+          {showSaveErrorModal && (
+            <BasicModal
+              key={`SaveError__${currentTestIndex}`}
+              show={showSaveErrorModal}
+              centered={true}
+              animation={false}
+              title="Error Saving Results"
+              content="Something went wrong while saving your results. Please try again. If the problem continues, contact support."
+              actions={[]}
+              closeLabel="Close"
+              handleClose={() => setShowSaveErrorModal(false)}
             />
           )}
         </Container>

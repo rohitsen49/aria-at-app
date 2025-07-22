@@ -218,6 +218,12 @@ const TestRenderer = ({
     };
   }, []);
 
+  useEffect(() => {
+    if (testRendererState && testRunStateRef) {
+      testRunStateRef.current = testRendererState;
+    }
+  }, [testRendererState]);
+
   useLayoutEffect(() => {
     if (testRunExport) {
       testRunExport.observe(result => {
