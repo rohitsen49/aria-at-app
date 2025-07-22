@@ -559,21 +559,8 @@ const TestRun = () => {
         break;
       }
       case 'goToNextTest': {
-        // adding code for pop-up to confirm whether or not the results should be saved
-        const confirmed = window.confirm(
-          'Are you sure you want to go to the next test? This action will save the results of the current test before proceeding.'
-        );
-        if (!confirmed) break;
-
-        // checks if save is successful
-        const saveSuccessful = await saveForm(true); // Use `true` to return a result reference
-        if (!saveSuccessful) {
-          alert('Something went wrong. Your results were not saved.');
-          break;
-        }
-
         // Save renderer's form state
-        //await saveForm(false, true);
+        await saveForm(false, true);
         navigateTests(false, currentTest, tests, setCurrentTestIndex);
         break;
       }
@@ -660,6 +647,30 @@ const TestRun = () => {
   ) => {
     const { id } = currentTest.testResult;
 
+    /*
+     * The shape of scenarioResults should be:
+     *
+     * {
+     * ..id,
+     * ..output,
+     * ..assertionResults: [
+     * ....{
+     * ......id
+     * ......passed
+     * ....},
+     * ....other assertionResults,
+     * ..],
+     * ..hasUnexpected,
+     * ..unexpectedBehaviors: [
+     * ....{
+     * ......id
+     * ......impact
+     * ......details
+     * ....},
+     * ....other unexpectedBehaviors,
+     * ..]
+     * }
+     * */
     const formattedScenarioResults = scenarioResults.map(
       ({
         assertionResults,
@@ -670,8 +681,8 @@ const TestRun = () => {
         unexpectedBehaviors
       }) => ({
         id,
-        output,
-        untestable,
+        output: output,
+        untestable: untestable,
         hasUnexpected,
         unexpectedBehaviors: unexpectedBehaviors?.map(
           ({ id, impact, details }) => ({
@@ -681,8 +692,17 @@ const TestRun = () => {
           })
         ),
         assertionResults: assertionResults
+          // All assertions are always being passed from the TestRenderer results, but
+          // when there is a 0-priority assertion exception, an id won't be provided,
+          // so do not include that result.
+          // This is due to the TestRenderer still requiring the position of the
+          // excluded assertion, but it can be removed at this point before being passed
+          // to the server
           .filter(el => !!el.id)
-          .map(({ id, passed }) => ({ id, passed }))
+          .map(({ id, passed }) => ({
+            id,
+            passed
+          }))
       })
     );
 
@@ -698,18 +718,12 @@ const TestRun = () => {
       const { testPlanRun: updatedTestPlanRun } =
         result.data.testResult.submitTestResult;
       const { testPlanReport: updatedTestPlanReport } = updatedTestPlanRun;
-
-      testRunResultRef.current = result.data.testResult.submitTestResult;
-
       updateLocalState(updatedTestPlanRun, updatedTestPlanReport);
     } else {
       const result = await saveTestResult({ variables });
       const { testPlanRun: updatedTestPlanRun } =
         result.data.testResult.saveTestResult;
       const { testPlanReport: updatedTestPlanReport } = updatedTestPlanRun;
-
-      testRunResultRef.current = result.data.testResult.saveTestResult;
-
       updateLocalState(updatedTestPlanRun, updatedTestPlanReport);
     }
   };
@@ -967,7 +981,7 @@ const TestRun = () => {
         </Button>
       );
       if (!isLastTest) forwardButtons = [nextButton];
-      primaryButtons = [previousButton, saveResultsButton, ...forwardButtons];
+      primaryButtons = [previousButton, ...forwardButtons, saveResultsButton];
     }
 
     const externalLogsUrl = testPlanRun?.collectionJob?.externalLogsUrl;
@@ -1069,26 +1083,6 @@ const TestRun = () => {
                   isEdit={isTestEditClicked}
                   setIsRendererReady={setIsRendererReady}
                   commonIssueContent={commonIssueContent}
-                  isRerunReport={testPlanReport.isRerun}
-                  historicalTestResult={
-                    testPlanReport.isRerun && testPlanReport.historicalReport
-                      ? testPlanReport.historicalReport.finalizedTestResults?.find(
-                          result => result.test.id === currentTest.id
-                        )
-                      : null
-                  }
-                  historicalAtName={
-                    testPlanReport.isRerun && testPlanReport.historicalReport
-                      ? testPlanReport.historicalReport.at.name
-                      : null
-                  }
-                  historicalAtVersion={
-                    testPlanReport.isRerun && testPlanReport.historicalReport
-                      ? testPlanReport.historicalReport.finalizedTestResults?.find(
-                          result => result.test.id === currentTest.id
-                        )?.atVersion?.name
-                      : null
-                  }
                 />
               </Row>
               {isRendererReady && (
