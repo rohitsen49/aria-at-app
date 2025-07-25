@@ -52,7 +52,8 @@ const TestRenderer = ({
   isReadOnly = false,
   isEdit = false,
   setIsRendererReady = false,
-  commonIssueContent
+  commonIssueContent,
+  handleSaveOrSubmitTestResultAction
 }) => {
   const { scenarioResults, test = {}, completedAt } = testResult;
   const { renderableContent } = test;
@@ -67,23 +68,31 @@ const TestRenderer = ({
   const setup = async () => {
     const testRunIO = new TestRunInputOutput();
 
-    // Array.from(new URL(document.location).searchParams)
     const configQueryParams = [['at', evaluateAtNameKey(at.name)]];
-
     testRunIO.setAllCommandsInputFromJSON(commandsJson);
     await testRunIO.setInputsFromCollectedTestAsync(renderableContent);
     testRunIO.setConfigInputFromQueryParamsAndSupport(configQueryParams);
 
     if (renderableContent.target?.referencePage) {
       const replaceIndex = testPageUrl.indexOf('reference/');
-      // sync with proxy url expected for aria-at-app to work properly
       const constructedTestPageUrl =
         testPageUrl.substring(0, replaceIndex) +
         renderableContent.target?.referencePage;
       testRunIO.setPageUriInputFromPageUri(constructedTestPageUrl);
-    } else testRunIO.setPageUriInputFromPageUri(testPageUrl);
+    } else {
+      testRunIO.setPageUriInputFromPageUri(testPageUrl);
+    }
 
     const _state = remapState(testRunIO.testRunState(), scenarioResults);
+
+    const patchedState = {
+      info: _state?.info || {},
+      config: _state?.config || {},
+      commands: _state?.commands || [],
+      currentUserAction: _state?.currentUserAction || 'unknown',
+      testPlanStrings: supportJson?.testPlanStrings || {},
+      openTest: { enabled: true }
+    };
 
     const testWindow = new TestWindow({
       ...testRunIO.testWindowOptions(),
@@ -106,11 +115,45 @@ const TestRenderer = ({
           testWindow.close();
         }
       },
-      resultsJSON: state => testRunIO.submitResultsJSON(state),
-      state: _state
+      resultsJSON: state => {
+        const scenarioResults =
+          state?.commands?.map(
+            ({
+              assertionResults,
+              id,
+              output,
+              untestable,
+              hasUnexpected,
+              unexpectedBehaviors
+            }) => ({
+              id,
+              output,
+              untestable,
+              hasUnexpected,
+              unexpectedBehaviors: unexpectedBehaviors?.map(
+                ({ id, impact, details }) => ({ id, impact, details })
+              ),
+              assertionResults: (assertionResults || [])
+                .filter(el => !!el?.id)
+                .map(({ id, passed }) => ({ id, passed }))
+            })
+          ) || [];
+
+        const atVersionId = state?.config?.at?.id;
+        const browserVersionId = state?.config?.browser?.id;
+
+        return handleSaveOrSubmitTestResultAction(
+          { atVersionId, browserVersionId, scenarioResults },
+          true // isSubmit
+        );
+      },
+      state: patchedState
     });
-    mounted.current && setTestRendererState(_state);
-    mounted.current && setTestRunExport(testRunExport);
+
+    if (mounted.current) {
+      setTestRendererState(patchedState);
+      setTestRunExport(testRunExport);
+    }
   };
 
   const remapState = (state, scenarioResults = []) => {
@@ -218,8 +261,10 @@ const TestRenderer = ({
     };
   }, []);
 
+  // saves the state of the test
   useEffect(() => {
     if (testRendererState && testRunStateRef) {
+      console.log('useEffect: testRendererState set:', testRendererState);
       testRunStateRef.current = testRendererState;
     }
   }, [testRendererState]);
@@ -228,6 +273,15 @@ const TestRenderer = ({
     if (testRunExport) {
       testRunExport.observe(result => {
         const { state: newState } = result;
+
+        if (!newState || !newState.info) {
+          console.warn(
+            'testRunExport.observe received invalid state:',
+            newState
+          );
+          return; // don't proceed
+        }
+
         const pageContent = testRunExport.instructions();
         const submitResult = testRunExport.testPageAndResults();
 
@@ -236,10 +290,22 @@ const TestRenderer = ({
 
         testRunStateRef.current = newState;
         recentTestRunStateRef.current = newState;
-        testRunResultRef.current =
-          submitResult && submitResult.resultsJSON && submitResult.results
-            ? submitResult
-            : null;
+
+        try {
+          testRunResultRef.current =
+            submitResult && submitResult.resultsJSON && submitResult.results
+              ? submitResult
+              : {
+                  resultsJSON: testRunExport.resultsJSON(newState),
+                  results: []
+                };
+        } catch (e) {
+          console.error('Failed to generate testRunResultRef:', e);
+          testRunResultRef.current = {
+            resultsJSON: { info: {}, config: {}, commands: [] },
+            results: []
+          };
+        }
       });
 
       setPageContent(testRunExport.instructions());
@@ -332,13 +398,13 @@ const TestRenderer = ({
     let settingsContent = [];
 
     if (isV2) {
-      // There is at least one defined 'setting' for the list of AT commands
       const commandSettingSpecified = renderableContent.commands.some(
         ({ settings }) => settings && settings !== 'defaultMode'
       );
 
       const defaultInstructions =
-        renderableContent.target.at.raw.defaultConfigurationInstructionsHTML;
+        renderableContent.target?.at?.raw
+          ?.defaultConfigurationInstructionsHTML || '';
       const setupScriptDescription = `${supportJson.testPlanStrings.openExampleInstruction} ${renderableContent.target.setupScript.scriptDescription}`;
       const testInstructions = renderableContent.instructions.instructions;
       const settingsInstructions = `${
@@ -354,19 +420,23 @@ const TestRenderer = ({
         setupScriptDescription + '.',
         testInstructions + ' ' + settingsInstructions
       ].map(e => unescape(e));
+
       settingsContent = parseSettingsContent(
         renderableContent.instructions.mode,
         renderableContent.target.at.raw.settings
       );
-    } else {
+    } else if (pageContent?.instructions?.instructions) {
       allInstructions = [
-        ...pageContent.instructions.instructions.instructions,
-        ...pageContent.instructions.instructions.strongInstructions,
-        pageContent.instructions.instructions.commands.description
+        ...(pageContent.instructions.instructions.instructions || []),
+        ...(pageContent.instructions.instructions.strongInstructions || []),
+        pageContent.instructions.instructions.commands.description || ''
       ];
+    } else {
+      allInstructions = []; // fallback to avoid undefined crash
     }
 
-    const commands = pageContent.instructions.instructions.commands.commands;
+    const commands =
+      pageContent?.instructions?.instructions?.commands?.commands || [];
     const commandsContent = parseListContent(commands);
     const content = parseListContent(allInstructions, commandsContent);
 
