@@ -68,7 +68,6 @@ const TestRun = () => {
   const [showConfirmNextModal, setShowConfirmNextModal] = useState(false);
 
   const { runId: testPlanRunId, testPlanReportId } = params;
-  console.log('✅ testPlanReportId:', testPlanReportId);
 
   // TODO: Separate these flows to be handle in different components?
   // Versus viewing a page rendered by testPlanReportId: `/test-plan-report/:id`
@@ -621,7 +620,9 @@ const TestRun = () => {
   const handleStartOverButtonClick = async () => setShowStartOverModal(true);
 
   const handleStartOverAction = async () => {
-    const { id } = currentTest.testResult;
+    //const { id } = currentTest.testResult;
+    const id = currentTest?.testResult?.id;
+
     let variables = {
       id
     };
@@ -843,27 +844,6 @@ const TestRun = () => {
     setIsShowingAtBrowserModal(true);
   };
 
-  const handleConfirmNextTest = (
-    tests,
-    setShowConfirmNextModal,
-    currentTestId,
-    testPlanReportId,
-    navigate
-  ) => {
-    const currentIndex = tests.findIndex(test => test.id === currentTestId);
-    const nextTest = tests[currentIndex + 1];
-
-    if (nextTest && testPlanReportId) {
-      const nextTestUrl = `/test-queue/${testPlanReportId}/test/${nextTest.id}`;
-      console.log('Navigating to:', nextTestUrl);
-      navigate(nextTestUrl);
-    } else {
-      console.warn('No next test found or missing testPlanReportId');
-    }
-
-    setShowConfirmNextModal(false);
-  };
-
   const handleAtAndBrowserDetailsModalAction = async (
     updatedAtVersionName,
     updatedBrowserVersionName,
@@ -1062,6 +1042,10 @@ const TestRun = () => {
         </ul>
       </div>
     );
+
+    if (!currentTest?.testResult) {
+      return <div>Loading test...</div>;
+    }
 
     return (
       <>
@@ -1374,7 +1358,7 @@ const TestRun = () => {
                   variant: 'primary',
                   onClick: () => {
                     setShowConfirmNextModal(false);
-                    handleNextTestClick(); // ✅ Reuse existing logic to go to next test
+                    handleNextTestClick(); // Reuse existing logic to go to next test
                   }
                 }
               ]}

@@ -55,7 +55,7 @@ const TestRenderer = ({
   commonIssueContent,
   handleSaveOrSubmitTestResultAction
 }) => {
-  const { scenarioResults, test = {}, completedAt } = testResult;
+  const { scenarioResults, test = {} } = testResult;
   const { renderableContent } = test;
 
   const mounted = useRef(false);
@@ -63,7 +63,6 @@ const TestRenderer = ({
   const [pageContent, setPageContent] = useState(null);
   const [testRendererState, setTestRendererState] = useState(null);
   const [submitResult, setSubmitResult] = useState(null);
-  const [submitCalled, setSubmitCalled] = useState(false);
 
   const setup = async () => {
     const testRunIO = new TestRunInputOutput();
@@ -264,7 +263,6 @@ const TestRenderer = ({
   // saves the state of the test
   useEffect(() => {
     if (testRendererState && testRunStateRef) {
-      console.log('useEffect: testRendererState set:', testRendererState);
       testRunStateRef.current = testRendererState;
     }
   }, [testRendererState]);
@@ -317,22 +315,15 @@ const TestRenderer = ({
   }, [testRunExport]);
 
   useEffect(() => {
-    if (!submitCalled && completedAt && pageContent) {
-      testRunStateRef.current = testRendererState;
-      recentTestRunStateRef.current = testRendererState;
-      pageContent.submit.click();
-      setSubmitCalled(true);
-    }
     return () => {
-      setSubmitCalled(false);
-
-      // Use to validate whether errors exist on the page. Error
-      // feedback may be erased on submit otherwise
+      // Use to validate whether errors exist on the page.
+      // Error feedback may be erased on submit otherwise
       if (
         !checkStateForErrors(testRunStateRef.current) &&
         !checkPageContentForErrors(pageContent)
-      )
+      ) {
         testRunStateRef.current = null;
+      }
     };
   }, [pageContent]);
 
@@ -572,7 +563,9 @@ TestRenderer.propTypes = {
   isEdit: PropTypes.bool,
   isReviewingBot: PropTypes.bool,
   setIsRendererReady: PropTypes.func,
-  commonIssueContent: PropTypes.object
+  commonIssueContent: PropTypes.object,
+  // adding this for testing
+  handleSaveOrSubmitTestResultAction: PropTypes.func
 };
 
 export default TestRenderer;
